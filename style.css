@@ -217,3 +217,28 @@
 .nav-links a:hover {
   background-color: black; /* Highlight color on hover */
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;  /* Hide menu items on mobile */
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 70px;  /* Adjust based on your header height */
+        left: 0;
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: block;  /* Show the menu when active */
+    }
+
+    .menu-toggle {
+        display: block;  /* Show the hamburger icon */
+    }
+
+    .nav-links li {
+        margin: 15px 0;  /* Space out links on mobile */
+    }
+}
